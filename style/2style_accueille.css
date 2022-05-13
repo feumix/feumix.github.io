@@ -1,0 +1,216 @@
+/*****************Police*****************/
+
+@font-face {
+    font-family: 'dashearly';
+    src: url('font/user_name/dash-early-webfont.woff2') format('woff2'),
+         url('font/user_name/dash-early-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'retro_gamingregular';
+    src: url('font/font_gaming/retro_gaming-webfont.woff2') format('woff2'),
+         url('font/font_gaming/retro_gaming-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*****************Bordures*****************/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*************************************header****************************************/
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Background/background_header.png") center;
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	letter-spacing: 0.01rem;
+	font-size: 0.000001px;
+	display: ruby;
+	align-items: center;
+	justify-content: space-between;
+	font-family: "retro_gamingregular";
+}
+
+.teste1 {
+	display: flex;
+	text-decoration: none;
+	color: rgb(255, 255, 255, 1);
+	font-size: 2rem;
+	letter-spacing: 0, 7rem;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.teste2 {
+	display: flex;
+	text-decoration: none;
+	color: rgb(255, 255, 255, 1);
+	font-size: 2rem;
+	letter-spacing: 0, 7rem;
+	padding-left: 30px;
+
+}
+
+.teste3 {
+	display: flex;
+	text-decoration: none;
+	color: rgb(255, 255, 255, 1);
+	font-size: 2rem;
+	letter-spacing: 0, 7rem;
+	padding-left: 30px;
+
+}
+
+.teste4 {
+	display: flex;
+	text-decoration: none;
+	color: rgb(255, 255, 255, 1);
+	font-size: 2rem;
+	letter-spacing: 0, 7rem;
+	padding-left: 30px;
+}
+
+
+/*****************Menue déroulant*****************/
+
+.menu {
+	font-family: "dashearly";
+	float: right;
+	margin-right: 20px;
+	background-color: transparent;
+	position: sticky;
+	top: 0px;
+	text-align: justify;
+	min-width: 225px;
+}
+
+.menu ul {
+	list-style-type: none;
+}
+
+.menu ul li {
+	position: relative;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.deco {
+	display: block;
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+	font-size: 1.5rem;
+}
+
+.user {
+	display: block;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+}
+
+.diff_option {
+	display: none;
+	box-shadow: 0px 1px 2px #CCC;
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+}
+
+.menu > ul li:hover .diff_option {
+	display: block;
+}
+
+.diff_option li {
+	float: none;
+	width: 100%;
+	text-align: left;
+}
+
+.diff_option a {
+	padding: 10px;
+	border-bottom: none;
+}
+
+.diff_option a:hover {
+	border-bottom: none;
+	background-color: rgb(200, 200, 200);
+}
+
+/*************************************content****************************************/
+
+.regles_teste {
+	min-height: 100vh;
+	margin: 0 auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Background/background_acceuille.png") center;
+	background-size: cover;
+	font-family: "retro_gamingregular";
+}
+
+.regles_teste h1 {
+	color: rgb(255, 255, 255);
+	font-weight: 900;
+	text-align: center;
+	padding-top: 100px;
+	padding-left: 300px;
+	padding-right: 300px;
+	letter-spacing: 0.5rem;
+	font-size: 4rem;
+}
+
+.regles_teste .consignes {
+	color: white;
+	font-weight: 100;
+	text-align: center;
+	margin-top: 100px;
+	margin-left: 400px;
+	margin-right: 400px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	letter-spacing: 0.001rem;
+	font-size: 1.7rem;
+	background-color: rgba(146, 146, 146, 0.4);
+}
+
+.button {
+	background: rgb(0, 0, 0, 1);
+	color: rgb(255, 255, 255, 1);
+	cursor: pointer;
+	display: flex;
+	text-align: left;
+	font-size: 3rem;
+	margin: 0 auto;
+	margin-top: 160px;
+	border-radius: 30px;
+	padding: 15px 24px;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.37), 0 6px 20px 0 rgba(0, 0, 0, 0.37);
+	max-width: 120px;
+	letter-spacing: 0.2rem;
+	text-decoration: none;
+	padding-right: 105px;
+	font-weight: 600;
+}
+
+.button:hover {
+	background: rgb(255, 255, 255, 1);
+	color: rgb(0, 0, 0, 1);
+}
+
+.button:active {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+	transform: translateY(4px);
+}

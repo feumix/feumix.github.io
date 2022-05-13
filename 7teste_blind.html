@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style/6style_blind.css">
+    </head>
+
+    <body>
+        <header>
+
+            <div class="nom_site">
+                <h1><a href="2fenetre_accueille.html" class="a_header">ACCED LIMITED</a></h1>
+            </div>
+
+            <div class="score">
+                <h2>Score = 0</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#" class="user" id="user_name">Nom User</a>
+                        <ul class="diff_option">
+                            <li><a href="1fenetre_login.html" class="deco"><span>Déconnexion</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="div_principal">
+
+            <div class="div_musique1" id="musique1">
+
+                <div class="apperre_20">
+
+                    <div class="en_tete">
+                        <h1 class="num_musique">Musique 1</h1>
+                    </div>
+
+                    <div class="apperre_10">
+                        <video width="550" height="500" controls>
+                            <source src="video/lana.mp4" type=video/mp4>
+                        </video>
+                    </div>
+
+                    <div class="answers">
+                        <br>
+                        
+                        <input type="radio" class="radio"  name="answers1" id="musique1_1">
+                        <label for="musique1_1">1. Lana Del Rey - Love</label><br>
+
+                        <input type="radio" class="radio"  name="answers1" id="musique1_2">
+                        <label for="musique1_2">2. Lana Del Rey - Born To Die</label><br>
+
+                        <input type="radio" class="radio"  name="answers1" id="musique1_3">
+                        <label for="musique1_3">3. Lorde - Solar Power</label>
+
+                    </div>
+
+                </div>
+
+				<button class="bouton_next" onclick="apperre_next_answer1()"><span>NEXT</span></button>
+
+            </div>
+
+            <div class="div_musique2" id="musique2">
+
+                <div class="apperre_20">
+
+                <div class="en_tete">
+                    <h1 class="num_musique">Musique 2</h1>
+                </div>
+
+                <div class="apperre_10">
+                    <video class="video2" width="550" height="500" controls>
+                        <source src="video/snoop_dogg.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+
+                <div class="answers">
+                    <br>
+
+                    <input type="radio" class="radio"  name="answers2" id="musique2_1">
+                    <label for="musique2_1">1. Snoop Dogg & Wiz Khalifa - Young, Wild and Free ft. Bruno Mars</label><br>
+
+                    <input type="radio" class="radio"  name="answers2" id="musique2_2">
+                    <label for="musique2_2">2. Dr. Dre - Still D.R.E. ft. Snoop Dogg</label><br>
+
+                    <input type="radio" class="radio"  name="answers2" id="musique2_3">
+                    <label for="musique2_3">3. Snoop Dogg - Gin And Juice</label>
+
+                </div>
+
+                </div>
+
+				<button class="bouton_next" onclick="apperre_next_answer2()"><span>NEXT</span></button>
+
+            </div>
+
+            <div class="div_musique3" id="musique3">
+
+                <div class="apperre_20">
+
+                    <div class="en_tete">
+                        <h1 class="num_musique">Musique 3</h1>
+                    </div>
+
+                    <div class="apperre_10">
+                        <video class="video3" width="550" height="500" controls>
+                            <source src="video/pinkpantheress.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="answers">
+                        <br>
+
+                        <input type="radio" class="radio"  name="answers3" id="musique3_1">
+                        <label for="musique3_1">1. Lucilectric - Explosiv</label><br>
+
+                        <input type="radio" class="radio"  name="answers3" id="musique3_2">
+                        <label for="musique3_2">2. pink Pantheress - I Must Apologise</label><br>
+
+                        <input type="radio" class="radio"  name="answers3" id="musique3_3">
+                        <label for="musique3_3">3. Lucilectric - Hey Fisch</label>
+
+                    </div>
+
+                </div>
+
+                <button class="bouton_next" onclick="apperre_next_answer3()"><span>NEXT</span></button>
+
+            </div>
+
+            <div class="div_musique4" id="musique4">
+
+                <div class="apperre_20">
+                    <div class="en_tete">
+                        <h1 class="num_musique">Musique 4</h1>
+                    </div>
+
+                    <div class="apperre_10">
+                        <video class="video4" width="550" height="500" controls>
+                            <source src="video/damso.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="answers">
+                        <br>
+
+                        <input type="radio" class="radio"  name="answers4" id="musique4_1">
+                        <label for="musique4_1">1. Dadju - Reine</label><br>
+
+                        <input type="radio" class="radio"  name="answers4" id="musique4_2">
+                        <label for="musique4_2">2. Dadju - Mon Soleil</label><br>
+
+                        <input type="radio" class="radio"  name="answers4" id="musique4_3">
+                        <label for="musique4_3">3. Damso - Mosaïque solitaire</label>
+
+                    </div>
+
+                </div>
+
+                <button class="bouton_next" onclick="apperre_next_answer4()"><span>NEXT</span></button>
+
+            </div>
+
+            <div class="div_musique5" id="musique5">
+
+                <div class="apperre_20">
+
+                    <div class="en_tete">
+                        <h1 class="num_musique">Musique 5</h1>
+                    </div>
+
+                    <div class="apperre_10">
+                        <video class="video5" width="550" height="500" controls>
+                            <source src="video/central_cee.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="answers">
+                        <br>
+
+                        <input type="radio" class="radio"  name="answers5" id="musique5_1">
+                        <label for="musique5_1">1. Digga D - Hold It Down </label><br>
+
+                        <input type="radio" class="radio"  name="answers5" id="musique5_2">
+                        <label for="musique5_2">2. central Cee - Little Bit Of This</label><br>
+
+                        <input type="radio" class="radio"  name="answers5" id="musique5_3">
+                        <label for="musique5_3">3. POP SMOKE - WELCOME TO THE PARTY</label>
+
+                    </div>
+
+                </div>
+                <a href="8fenetre_fin.html"><button class="bouton_next" onclick="comptage()"><span>NEXT</span></button></a>
+
+            </div>
+
+        </div>
+    
+
+    </body>
+
+    <script src="script/7script_blind.js"></script>
+
+</html>

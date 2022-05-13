@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style/4style_QCM.css">
+	</head>
+
+	<body>
+		<header>
+
+			<div class="nom_site">
+				<h1><a href="2fenetre_accueille.html" class="a_header">ACCED LIMITED</a></h1>
+			</div>
+	
+			<div class="score">
+				<h2>Score = 0</h2>
+			</div>
+	
+			<div class="menu">
+				<ul>
+					<li><a href="#" class="user" id="user_name">Nom User</a>
+						<ul class="diff_option">
+							<li><a href="1fenetre_login.html" class="deco"><span>Déconnexion</span></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<div class="div_principal">
+
+			<div class="question1" id="question1">
+
+				<div class="en_tete">
+					<h1 class="nb_question">QUESTION 1</h1>
+					<h1 class="question_text">Est-ce-que Jack l'éventreur à existé ?</h1>
+				</div>
+
+				<div class="answers1"> 
+					<br><br>
+					<input type="radio" name="answers1" class="radio1" id="quest1_oui">
+					<label for="quest1_oui">Oui</label>
+
+					<br><br>
+
+					<input type="radio" name="answers1" class="radio1" id="quest1_non">
+					<label for="quest1_non">Non</label>
+
+				</div>
+
+				<button class="bouton_next" onclick="apperre_next_answer1()"><span>NEXT</span></button>
+
+			</div>
+
+			<div class="question2" id="question2">
+
+				<div class="en_tete">
+					<h1 class="nb_question">QUESTION 2</h1>
+					<h1 class="question_text">Quel est ton signe astrologique ?</h1>
+				</div>
+
+				<div class="answers2">
+
+					<input type="radio" name="answer" id="quest2_Belier" class="radio2">
+					<label for="quest2_Belier">1. Bélier</label><br><br>
+
+					<input type="radio" name="answer" id="quest2_Taureau" class="radio2">
+					<label for="quest2_Taureau">2. Taureau</label><br><br>
+
+					<input type="radio" name="answer" id="quest2_Gemauxon" class="radio2">
+					<label for="quest2_Gemauxon">3. Gémauxon</label><br><br>
+
+					<input type="radio" name="answer" id="quest2_Canceron" class="radio2">
+					<label for="quest2_Canceron">4. Cancer</label><br><br>
+
+					<input type="radio" name="answer" id="quest2_Lion" class="radio2">
+					<label for="quest2_Lion">5. Lion</label><br><br>
+
+					<input type="radio" name="answer" id="quest2_Vierge" class="radio2">
+					<label for="quest2_Vierge">6. Vierge</label><br><br>
+
+					<input type="radio" name="answer" id="quest2_Balance" class="radio2">
+					<label for="quest2_Balance">7. Balance</label><br><br>
+
+					<input type="radio" name="answer" id="quest2_Scorpion" class="radio2">
+					<label for="quest2_Scorpion">8. Scorpion</label><br><br>
+
+					<input type="radio" name="answer" id="quest2_Sagittaire" class="radio2">
+					<label for="quest2_Sagittaire">9. Sagittaire</label><br><br>
+
+					<input type="radio" name="answer" id="quest2_Capricorne" class="radio2">
+					<label for="quest2_Capricorne">10. Capricorne</label><br><br>
+
+					<input type="radio" name="answer" id="quest2_Verseau" class="radio2">
+					<label for="quest2_Verseau">11. Verseau</label><br><br>
+
+					<input type="radio" name="answer" id="quest2_Poisson" class="radio2">
+					<label for="quest2_Poisson">12. Poisson</label>
+				</div>
+
+				<button class="bouton_after" onclick="apperre_after_answer1()">AFTER</button>
+				<button class="bouton_next" onclick="apperre_next_answer2()"><span>NEXT</span></button>	
+
+			</div>
+
+			<div class="question3" id="question3">
+
+				<div class="en_tete">
+					<h1 class="nb_question">QUESTION 3</h1>
+					<h1 class="question_text">Combien Paris accueille-t-elle de Fashion-week par an ?</h1>
+				</div>
+
+				<div class="answers3">
+
+					<input type="radio" name="answers3" class="radio3" id="quest3_2">
+					<label for="quest3_2">2</label>
+
+					<input type="radio" name="answers3" class="radio3" id="quest3_3">
+					<label for="quest3_3">3</label>
+
+					<br><br><br>
+
+					<input type="radio" name="answers3" class="radio3" id="quest3_4">
+					<label for="quest3_4">4</label>
+
+					<input type="radio" name="answers3" class="radio3" id="quest3_1">
+					<label for="quest3_1">1</label>
+				</div>
+
+				<button class="bouton_after" onclick="apperre_after_answer2()">AFTER</button>
+				<button class="bouton_next" onclick="apperre_next_answer3()"><span>NEXT</span></button>	
+
+			</div>
+
+			<div class="question4" id="question4">
+
+				<div class="en_tete">
+					<h1 class="nb_question">QUESTION 4</h1>
+					<h1 class="question_text">Choisis un « love » (moyen d'exprimer son affection) ?</h1>
+				</div>
+
+				<div class="answers4">
+					<br><br>
+
+					<input type="checkbox" name="answers4" class="checkbox4" id="quest4_touch">
+					<label for="quest4_touch">1. Physical touch (contact physique)</label><br><br>
+
+					<input type="checkbox" name="answers4" class="checkbox4" id="quest4_gift">
+					<label for="quest4_gift">2. Gift (cadeau)</label><br><br>
+
+					<input type="checkbox" name="answers4" class="checkbox4" id="quest4_service">
+					<label for="quest4_service">3. Service</label><br><br>
+
+					<input type="checkbox" name="answers4" class="checkbox4" id="quest4_word">
+					<label for="quest4_word">4. Words (les mots)</label><br><br>
+
+					<input type="checkbox" name="answers4" class="checkbox4" id="quest4_all">
+					<label for="quest4_all">5. All of them (tous)</label>
+				</div>
+
+				<button class="bouton_after" onclick="apperre_after_answer3()">AFTER</button>
+				<button class="bouton_next" onclick="apperre_next_answer4()"><span>NEXT</span></button>	
+
+			</div>
+
+			<div class="question5" id="question5">
+
+				<div class="en_tete">
+					<h1 class="nb_question">QUESTION 5</h1>
+					<h1 class="question_text">Crois-tu aux miracles ?</h1>
+				</div>
+
+				<div class="answers5">
+					<br><br><br>
+
+					<input type="radio" name="answers4" class="radio5" id="quest5_oui">
+					<label for="quest5_oui">1. J'aimerais</label><br><br><br>
+
+					<input type="radio" name="answers4" class="radio5" id="quest5_jsp">
+					<label for="quest5_jsp">2. Je ne sais pas</label><br><br><br>
+
+					<input type="radio" name="answers4" class="radio5" id="quest5_creer">
+					<label for="quest5_creer">3. Je créé(e) mes propres miracles</label>
+				</div>
+
+				<button class="bouton_after" onclick="apperre_after_answer4()">AFTER</button>
+				<button class="bouton_next" onclick="apperre_next_answer5()"><span>NEXT</span></button>
+
+			</div>
+
+			<div class="question6" id="question6">
+
+				<div class="en_tete">
+					<h1 class="nb_question">QUESTION 6</h1>
+					<h1 class="question_text">Quel a été le premier jeux vidéo ?</video></h1>
+				</div>
+
+				<div class="answers6">
+					<br><br><br><br>
+
+					<input type="radio" name="answers6" class="radio6" id="quest6_tic">
+					<label for="quest6_tic">Pong</label>
+
+					<input type="radio" name="answers6" class="radio6" id="quest6_pong">
+					<label for="quest6_pong">Tic Tac Toe</label>
+
+					<br><br><br>
+
+					<input type="radio" name="answers6" class="radio6" id="quest6_ten">
+					<label for="quest6_ten">GTA I</label>
+
+					<input type="radio" name="answers6" class="radio6" id="quest6_gta">
+					<label for="quest6_gta">Tennis For two</label>
+				</div>
+
+				<button class="bouton_after" onclick="apperre_after_answer5()">AFTER</button>
+				<button class="bouton_next" onclick="apperre_next_answer6()"><span>NEXT</span></button>
+
+			</div>
+
+			<div class="question7" id="question7">
+
+				<div class="en_tete">
+					<h1 class="nb_question">QUESTION 7</h1>
+					<h1 class="question_text">Croyez vous au progrès ?</h1>
+				</div>
+
+				<div class="answers7">
+					<br><br><br>
+
+					<input type="radio" name="answers7" class="radio7" id="quest7_1">
+					<label for="quest7_1">Non</label><br><br><br>
+
+					<input type="radio" name="answers7" class="radio7" id="quest7_2">
+					<label for="quest7_2">Oui</label><br><br><br>
+
+
+				</div>
+
+				<button class="bouton_after" onclick="apperre_after_answer6()">AFTER</button>
+				<button class="bouton_next" onclick="apperre_next_answer7()"><span>NEXT</span></button>
+
+			</div>
+
+			<div class="question8" id="question8">
+
+				<div class="en_tete">
+					<h1 class="nb_question">QUESTION 8</h1>
+					<h1 class="question_text">Fais-tu attention à ton style ?</h1>
+				</div>
+
+				<div class="answers8">
+					<br><br><br>
+					
+					<input type="radio" name="answers8" class="radio8" id="quest8_1">
+					<label for="quest8_1">1. Un peu</label><br><br><br>
+
+					<input type="radio" name="answers8" class="radio8" id="quest8_2">
+					<label for="quest8_2">2. Ça dépends des jours</label><br><br><br>
+
+					<input type="radio" name="answers8" class="radio8" id="quest8_3">
+					<label for="quest8_3">3. L'apparence est très importante pour moi</label><br><br><br>
+
+					<input type="radio" name="answers8" class="radio8" id="quest8_4">
+					<label for="quest8_4">4. Je m'en fou</label><br><br><br>
+				</div>
+
+				<button class="bouton_after" onclick="apperre_after_answer7()">AFTER</button>
+				<a href="6teste_anime.html"><button class="bouton_next" onclick="compatge()"><span>NEXT</span></button></a>
+
+			</div>
+
+		</div>
+
+	</body>
+
+	<script src="script/5script_QCM.js"></script>
+
+</html>

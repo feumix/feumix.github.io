@@ -1,0 +1,434 @@
+@font-face {
+    font-family: 'retro_gamingregular';
+    src: url('font/font_gaming/retro_gaming-webfont.woff2') format('woff2'),
+         url('font/font_gaming/retro_gaming-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dashearly';
+    src: url('font/user_name/dash-early-webfont.woff2') format('woff2'),
+         url('font/user_name/dash-early-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*************************************header****************************************/
+
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Background/background_header.png") center;
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	display: ruby;
+	text-align: center;
+    font-family: "retro_gamingregular";
+}
+
+.nom_site {
+	float: left;
+	text-align: justify;
+	color: rgb(255, 255, 255);
+	margin-left: 40px;
+	padding-top: 5px;
+	font-size: 1.5rem;
+}
+
+.a_header {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
+.score {
+	text-align: justify;
+	color: rgb(255, 255, 255);
+	padding-top: 15px;
+	font-size: 1.2rem;
+}
+
+.menu {
+	float: right;
+	margin-right: 40px;
+	background-color: transparent;
+	position: sticky;
+	top: 0px;
+	text-align: justify;
+	min-width: 225px;
+    font-family: "dashearly";
+}
+
+.menu ul {
+	list-style-type: none;
+}
+
+.menu ul li {
+	position: relative;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.deco {
+	display: block;
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+	font-size: 1.5rem;
+}
+
+.user {
+	display: block;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+}
+
+.diff_option {
+	display: none;
+	box-shadow: 0px 1px 2px #CCC;
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+	border: 2px;
+}
+
+.menu>ul li:hover .diff_option {
+	display: block;
+}
+
+.diff_option li {
+	float: none;
+	width: 100%;
+	text-align: left;
+}
+
+.diff_option a {
+	padding: 10px;
+	border-bottom: none;
+}
+
+.diff_option a:hover {
+	border-bottom: none;
+	background-color: rgb(200, 200, 200);
+}
+
+
+/*************************************content****************************************/
+
+.div_principal {
+	height: 100vh;
+	margin: 0 auto;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("Background/background_anime.jpg") center;
+    background-size: 90%;
+	text-align: center;
+    overflow-y: hidden;
+    color: rgb(255, 255, 255);
+}
+
+
+/******************En tête******************/
+
+.en_tete {
+    margin-top: 50px;
+    font-family: "retro_gamingregular";
+}
+
+.en_tete .nb_question {
+    font-size:3.5rem;
+    text-decoration: underline;
+    color: rgba(186, 186, 186, 0.727);
+}
+
+
+/******************Balise br******************/
+
+br {
+    margin-bottom: 50px;
+}
+
+
+/******************RadioButton******************/
+
+input[type="radio"].radio {
+    display: none;
+}
+input[type="radio"].radio + label {
+    padding: 0.3rem 0.5rem;
+    border: 3px dashed rgba(134, 10, 111, 0.781);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+input[type="radio"].radio:checked + label {
+    border: 3px solid rgba(174, 174, 174, 0.621);
+    background-color: rgba(134, 10, 111, 0.415);
+    color: rgba(0, 0, 0, 0.906);
+}
+
+
+/******************question1******************/
+
+.div_principal .question1 {
+	display: block;
+    padding-top: 50px;
+}
+
+.img1 {
+    margin-top: 50px;
+    width: 500px;
+    background-color: rgba(134, 10, 111, 0.2);
+}
+
+.answers1 {
+    padding-top: 150px;
+    font-size: 2.5rem;
+}
+
+
+/******************question2******************/
+
+.div_principal .question2 {
+	display: none;
+    padding-top: 50px;
+}
+
+.img2 {
+    padding-top: -50px;
+    width: 800px;
+    background-color: rgba(134, 10, 111, 0.2);
+}
+
+.answers2 {
+    padding-top: 119px;
+    font-size: 2.5rem;
+}
+
+
+/******************question3******************/
+
+.div_principal .question3 {
+	display: none;
+    padding-top: 50px;
+}
+
+.img3 {
+    margin-top: 50px;
+    width: 600px;
+    background-color: rgba(134, 10, 111, 0.2);
+}
+
+.answers3 {
+    margin-top: 184px;
+    font-size: 2.5rem;
+}
+
+
+/******************question4******************/
+
+.div_principal .question4 {
+	display: none;
+    padding-top: 50px;
+}
+
+.img4 {
+    width: 500px;
+    background-color: rgba(134, 10, 111, 0.2);
+}
+
+.answers4 {
+    padding-top: 123px;
+    font-size: 2.5rem;
+}
+
+
+/******************question5******************/
+
+.div_principal .question5 {
+	display: none;
+    padding-top: 50px;
+}
+
+.img5 {
+    margin-top: 100px;
+    width: 300px;
+    background-color: rgba(134, 10, 111, 0.2);
+}
+
+.answers5 {
+    padding-top: 126px;
+    font-size: 2.5rem;
+}
+
+
+/******************question6******************/
+
+.div_principal .question6 {
+	display: none;
+    padding-top: 50px;
+}
+
+.img6 {
+    margin-top: 100px;
+    width: 500px;
+    background-color: rgba(134, 10, 111, 0.2);
+}
+
+.answers6 {
+    padding-top: 167px;
+    font-size: 2.5rem;
+}
+
+
+/******************question7******************/
+
+.div_principal .question7 {
+	display: none;
+    padding-top: 50px;
+}
+
+.img7 {
+    margin-top: 50px;
+    width: 600px;
+    background-color: rgba(134, 10, 111, 0.2);
+}
+
+.answers7 {
+    padding-top: 190px;
+    font-size: 2.5rem;
+}
+
+
+/******************question8******************/
+
+.div_principal .question8 {
+	display: none;
+    padding-top: 50px;
+}
+
+.img8 {
+    margin-top: 100px;
+    width: 400px;
+    background-color: rgba(134, 10, 111, 0.2);
+}
+
+.answers8 {
+    padding-top: 105px;
+    font-size: 2.5rem;
+}
+
+
+/******button******/
+
+.bouton_after {
+    letter-spacing: 0.2rem;
+    font-size: 30px;
+    padding: 8px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    position: absolute;
+    bottom: 70px;
+    left: 70px;
+    font-family: "retro_gamingregular"
+}
+
+.bouton_after {
+    background-color: rgba(0, 0, 0, 0.534);
+    border: 2px solid rgba(255, 255, 255, 0.797);
+    color: rgba(255, 255, 255, 0.797);
+}
+
+.bouton_after:hover {
+    background-color: rgba(255, 255, 255, 0.671);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+.bouton_after span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.bouton_after span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.bouton_after:hover span {
+    padding-right: 25px;
+}
+
+.bouton_after:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.bouton_next {
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-size: 30px;
+    padding: 8px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    position: absolute;
+    right: 70px;
+    bottom: 70px;
+    font-family: "retro_gamingregular"
+}
+
+.bouton_next {
+    background-color: rgba(0, 0, 0, 0.534);
+    border: 2px solid rgba(255, 255, 255, 0.797);
+    color: rgba(255, 255, 255, 0.797);
+}
+
+.bouton_next:hover {
+    background-color: rgba(255, 255, 255, 0.671);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+.bouton_next span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.bouton_next span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.bouton_next:hover span {
+    padding-right: 25px;
+}
+
+.bouton_next:hover span:after {
+    opacity: 1;
+    right: 0;
+}

@@ -1,0 +1,617 @@
+@font-face {
+    font-family: 'retro_gamingregular';
+    src: url('font/font_gaming/retro_gaming-webfont.woff2') format('woff2'),
+         url('font/font_gaming/retro_gaming-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dashearly';
+    src: url('font/user_name/dash-early-webfont.woff2') format('woff2'),
+         url('font/user_name/dash-early-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/*************************************header****************************************/
+
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Background/background_header.png") center;
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	display: ruby;
+	text-align: center;
+    font-family: "retro_gamingregular";
+}
+
+.nom_site {
+	float: left;
+	text-align: justify;
+	color: rgb(255, 255, 255);
+	margin-left: 40px;
+	padding-top: 5px;
+	font-size: 1.5rem;
+}
+
+.a_header {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
+.score {
+	text-align: justify;
+	color: rgb(255, 255, 255);
+	padding-top: 15px;
+	font-size: 1.2rem;
+}
+
+.menu {
+	float: right;
+	margin-right: 40px;
+	background-color: transparent;
+	position: sticky;
+	top: 0px;
+	text-align: justify;
+	min-width: 225px;
+    font-family: "dashearly";
+}
+
+.menu ul {
+	list-style-type: none;
+}
+
+.menu ul li {
+	position: relative;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.deco {
+	display: block;
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+	font-size: 1.5rem;
+}
+
+.user {
+	display: block;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+}
+
+.diff_option {
+	display: none;
+	box-shadow: 0px 1px 2px #CCC;
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+	border: 2px;
+}
+
+.menu>ul li:hover .diff_option {
+	display: block;
+}
+
+.diff_option li {
+	float: none;
+	width: 100%;
+	text-align: left;
+}
+
+.diff_option a {
+	padding: 10px;
+	border-bottom: none;
+}
+
+.diff_option a:hover {
+	border-bottom: none;
+	background-color: rgb(200, 200, 200);
+}
+
+/*************************************content****************************************/
+
+.div_principal {
+	height: 100vh;
+	margin: 0 auto;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("Background/background_QCM.jpg") center;
+    background-size: 90%;
+    background-position: top;
+	text-align: center;
+    overflow-y: hidden;
+    color: rgb(255, 255, 255);
+}
+
+/******div question******/
+.en_tete {
+    display: inline-block;
+    color: rgba(163, 12, 12, 0.881);
+    font-family: "retro_gamingregular";
+}
+
+.en_tete .nb_question {
+    padding-bottom: 40px;
+    font-size: 3rem;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+}
+
+.en_tete .question_text {
+    font-size: 2.2rem;
+    padding-bottom: 20px;
+}
+
+
+/******************question 1******************/
+
+.div_principal .question1 {
+    display: inline-block;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.answers1 {
+    padding-left: 50%;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: left;
+    font-family: 'Water Brush', cursive;
+}
+
+/******Radiobutton question1******/
+
+input[type="radio"].radio1 {
+    display: none;
+}
+    
+input[type="radio"].radio1 + label {
+    position: relative;
+    padding-left: 2.3rem;
+}
+    
+input[type="radio"].radio1 + label::before,
+input[type="radio"].radio1 + label::after {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    content:'';
+    width: 2rem;
+    height: 2rem; 
+    border-radius: 2rem;
+}
+    
+input[type="radio"].radio1 + label::before {
+    border: 1px solid rgba(163, 12, 12, 0.881);
+    background-color: #eee;
+}
+    
+input[type="radio"].radio1:checked + label::after {
+    background-color: rgba(163, 12, 12, 0.881);
+}
+
+
+/******************question 2******************/
+
+.div_principal .question2 {
+    display: none;
+    padding-top: 150px;
+}
+
+.answers2 {  
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: 'Water Brush', cursive;
+}
+
+
+/******Radiobutton question2******/
+
+input[type="radio"].radio2 {
+    display: none;
+}
+input[type="radio"].radio2 + label {
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #ccc;
+}
+input[type="radio"].radio2:checked + label {
+    border: 1px solid #000;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+
+
+/******************question 3******************/
+
+.div_principal .question3 {
+    display: none;
+    padding-top: 150px;
+}
+
+.answers3 {
+    font-weight: 700;
+    font-size: 2rem;
+    padding-left: 150px;
+    padding-top: 80px;
+    font-family: 'Water Brush', cursive;
+}
+
+
+/******Radiobutton question3******/
+
+input[type="radio"].radio3 {
+    display: none;
+}
+
+input[type="radio"].radio3 + label {
+    position: relative;
+    padding-left: 40px;
+    padding-right: 150px;
+}
+
+input[type="radio"].radio3 + label::before,
+input[type="radio"].radio3 + label::after {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    content:'';
+    border-radius: 2rem;
+}
+
+input[type="radio"].radio3 + label::before {
+    bottom: 0;
+    left: 0;
+    border: 1px solid rgba(163, 12, 12, 0.881);
+    background-color: #eee;
+    width: 2rem;
+    height: 2rem; 
+}
+
+input[type="radio"].radio3 + label::after {
+    bottom: 3px;
+    left: 3px;
+    width: calc(2rem - 6px);
+    height: calc(2rem - 6px);
+}
+
+input[type="radio"].radio3:checked + label::after {
+    background-color: rgba(163, 12, 12, 0.881);
+}
+
+
+/******************question 4******************/
+
+.div_principal .question4 {
+    display: none;
+    padding-top: 150px;
+}
+
+.answers4 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    font-family: 'Water Brush', cursive;
+}
+
+/******Radiobutton question4******/
+
+input[type="checkbox"].checkbox4 {
+    display: none;
+}
+
+input[type="checkbox"].checkbox4 + label {
+    border: 1px solid transparent;
+    color: rgba(255, 255, 255, 0.823);
+}
+
+input[type="checkbox"].checkbox4:checked + label {
+    border: 2px solid rgba(85, 85, 85, 0.565);
+    background-color: rgba(255, 255, 255, 0.772);
+    color: rgba(0, 0, 0, 0.805);
+}
+
+
+/******************question 5******************/
+
+.div_principal .question5 {
+    display: none;
+    padding-top: 150px;
+}
+
+.answers5 {
+    padding-left: 45%;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: left;
+    font-family: 'Water Brush', cursive;
+}
+
+/******Radiobutton question5******/
+
+input[type="radio"].radio5 {
+    display: none;
+}
+    
+input[type="radio"].radio5 + label {
+    position: relative;
+    padding-left: 2.3rem;
+}
+    
+input[type="radio"].radio5 + label::before,
+input[type="radio"].radio5 + label::after {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    content:'';
+    width: 2rem;
+    height: 2rem; 
+    border-radius: 2rem;
+}
+    
+input[type="radio"].radio5 + label::before {
+    border: 1px solid rgba(163, 12, 12, 0.881);
+    background-color: #eee;
+}
+    
+input[type="radio"].radio5:checked + label::after {
+    background-color: rgba(163, 12, 12, 0.881);
+}
+
+
+/******************question 6******************/
+
+.div_principal .question6 {
+    display: none;
+    padding-top: 150px;
+}
+
+.answers6 {
+    padding-left: 40%;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: left;
+    font-family: 'Water Brush', cursive;
+}
+
+
+/******Radiobutton question6******/
+
+input[type="radio"].radio6 {
+    display: none;
+}
+    
+input[type="radio"].radio6 + label {
+    position: relative;
+    padding-left: 2.3rem;
+    padding-right: 150px;
+}
+    
+input[type="radio"].radio6 + label::before,
+input[type="radio"].radio6 + label::after {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    content:'';
+    width: 2rem;
+    height: 2rem; 
+    border-radius: 2rem;
+}
+    
+input[type="radio"].radio6 + label::before {
+    border: 1px solid rgba(163, 12, 12, 0.881);
+    background-color: #eee;
+}
+    
+input[type="radio"].radio6:checked + label::after {
+    background-color: rgba(163, 12, 12, 0.881);
+}
+
+
+/******************question 7******************/
+
+.div_principal .question7 {
+    display: none;
+    padding-top: 150px;
+}
+
+.answers7 {
+    padding-left: 48%;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: left;
+    font-family: 'Water Brush', cursive;
+}
+
+/******Radiobutton question7******/
+
+input[type="radio"].radio7 {
+    display: none;
+}
+
+input[type="radio"].radio7 + label {
+    position: relative;
+    padding-left: 2.3rem;
+}
+
+input[type="radio"].radio7 + label::before,
+input[type="radio"].radio7 + label::after {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    content:'';
+    border-radius: 2rem;
+}
+
+input[type="radio"].radio7 + label::before {
+    bottom: 0;
+    left: 0;
+    border: 1px solid rgba(163, 12, 12, 0.881);
+    background-color: #eee;
+    width: 2rem;
+    height: 2rem; 
+}
+
+input[type="radio"].radio7 + label::after {
+    bottom: 3px;
+    left: 3px;
+    width: calc(2rem - 6px);
+    height: calc(2rem - 6px);
+}
+
+input[type="radio"].radio7:checked + label::after {
+    background-color: rgba(163, 12, 12, 0.881);
+}
+
+/******************question 8******************/
+
+.div_principal .question8 {
+    display: none;
+    padding-top: 150px;
+}
+
+.answers8 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: 'Water Brush', cursive;
+}
+
+/******Radiobutton question7******/
+
+input[type="radio"].radio8 {
+    display: none;
+}
+
+input[type="radio"].radio8 + label {
+    padding: 0.3rem 0.5rem;
+    border: 3px dashed rgb(81, 81, 81);
+}
+
+input[type="radio"].radio8:checked + label {
+    border: 3px solid rgb(218, 218, 218);
+}
+
+
+/******button******/
+
+.bouton_after {
+    letter-spacing: 0.2rem;
+    font-size: 30px;
+    padding: 8px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    position: absolute;
+    bottom: 70px;
+    left: 70px;
+    font-family: "retro_gamingregular"
+}
+
+.bouton_after {
+    background-color: rgba(0, 0, 0, 0.534);
+    border: 2px solid rgba(255, 255, 255, 0.797);
+    color: rgba(255, 255, 255, 0.797);
+}
+
+.bouton_after:hover {
+    background-color: rgba(255, 255, 255, 0.671);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+.bouton_after span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.bouton_after span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.bouton_after:hover span {
+    padding-right: 25px;
+}
+
+.bouton_after:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.bouton_next {
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-size: 30px;
+    padding: 8px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    position: absolute;
+    right: 70px;
+    bottom: 70px;
+    font-family: "retro_gamingregular"
+}
+
+.bouton_next {
+    background-color: rgba(0, 0, 0, 0.534);
+    border: 2px solid rgba(255, 255, 255, 0.797);
+    color: rgba(255, 255, 255, 0.797);
+}
+
+.bouton_next:hover {
+    background-color: rgba(255, 255, 255, 0.671);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+.bouton_next span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.bouton_next span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.bouton_next:hover span {
+    padding-right: 25px;
+}
+
+.bouton_next:hover span:after {
+    opacity: 1;
+    right: 0;
+}

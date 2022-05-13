@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style/5style_anime.css">
+</head>
+
+<body>
+	<header>
+
+		<div class="nom_site">
+			<h1><a href="2fenetre_accueille.html" class="a_header">ACCED LIMITED</a></h1>
+		</div>
+
+		<div class="score">
+			<h2>Score = 0</h2>
+		</div>
+
+		<div class="menu">
+			<ul>
+				<li><a href="#" class="user" id="user_name">Nom User</a>
+					<ul class="diff_option">
+						<li><a href="1fenetre_login.html" class="deco"><span>Déconnexion</span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	
+	<div class="div_principal">
+
+			<div class="question1" id="question1">
+
+				<div class="en_tete">
+					<h1 class="nb_question">QUESTION 1</h1>
+				</div>
+				
+				<div><img src="image/anime_symbole/one_piece.png" class="img1"></div>
+
+				<div class="answers1"> 
+					<input type="radio" class="radio" name="radio1" id="quest1_1">
+					<label for="quest1_1">1.Dragon Ball Z</label>
+					
+					<input type="radio" class="radio" name="radio1" id="quest1_2">
+					<label for="quest1_2">2. One piece</label>
+
+					<input type="radio" class="radio" name="radio1" id="quest1_3">
+					<label for="quest1_3">3. Naruto</label>
+					
+					<input type="radio" class="radio" name="radio1" id="quest1_4">
+					<label for="quest1_4">4. My Hero Academia</label>
+				</div>
+
+				<button class="bouton_next" onclick="apperre_next_answer1()"><span>NEXT</span></button>
+
+			</div>
+
+			<div class="question2" id="question2">
+
+				<div class="en_tete">
+					<h1 class="nb_question">QUESTION 2</h1>
+				</div>
+				
+				<div><img src="image/anime_symbole/naruto.png" class="img2"></div>
+
+				<div class="answers2">
+					<input type="radio" class="radio" name="radio2" id="quest2_1">
+					<label for="quest2_1">1. Naruto</label>
+					
+					<input type="radio" class="radio" name="radio2" id="quest2_2">
+					<label for="quest2_2">2. Fairy tail</label>
+					
+					<input type="radio" class="radio" name="radio2" id="quest2_3">
+					<label for="quest2_3">3. Assassination classroom</label>
+					
+					<input type="radio" class="radio" name="radio2" id="quest2_4">
+					<label for="quest2_4">4. Black Butler</label>
+				</div>
+
+				<button class="bouton_after" onclick="apperre_after_answer1()">AFTER</button>
+				<button class="bouton_next" onclick="apperre_next_answer2()"><span>NEXT</span></button>	
+
+			</div>
+
+			<div class="question3" id="question3">
+
+				<div class="en_tete">
+					<h1 class="nb_question">QUESTION 3</h1>
+				</div>
+				
+				<div><img src="image/anime_symbole/death_note.png" class="img3"></div>
+
+				<div class="answers3">
+					<input type="radio" class="radio" name="radio3" id="quest3_1">
+					<label for="quest3_1">1. Hunter x Hunter</label>
+					
+					<input type="radio" class="radio" name="radio3" id="quest3_2">
+					<label for="quest3_2">2. Sword Art Online</label>
+					
+					<input type="radio" class="radio" name="radio3" id="quest3_3">
+					<label for="quest3_3">3. Jujustsu Kaisen</label>
+					
+					<input type="radio" class="radio" name="radio3" id="quest3_4">
+					<label for="quest3_4">4. Death Note</label>
+				</div>
+
+				<button class="bouton_after" onclick="apperre_after_answer2()">AFTER</button>
+				<button class="bouton_next" onclick="apperre_next_answer3()"><span>NEXT</span></button>	
+
+			</div>
+			
+			<div class="question4" id="question4">
+
+				<div class="en_tete">
+					<h1 class="nb_question">QUESTION 4</h1>
+				</div>
+				
+				<div><img src="image/anime_symbole/fairy_tail.png" class="img4"></div>
+
+				<div class="answers4">
+					<input type="radio" class="radio" name="radio4" id="quest4_1">
+					<label for="quest4_1">1. Blue Period</label>
+					
+					<input type="radio" class="radio" name="radio4" id="quest4_2">
+					<label for="quest4_2">2. Shingeki no Kyojin</label>
+				
+					<input type="radio" class="radio" name="radio4" id="quest4_3">
+					<label for="quest4_3">3. Blue exorciste</label>
+					
+					<input type="radio" class="radio" name="radio4" id="quest4_4">
+					<label for="quest4_4">4. Fairy Tail</label>
+				</div>
+
+				<button class="bouton_after" onclick="apperre_after_answer3()">AFTER</button>
+				<button class="bouton_next" onclick="apperre_next_answer4()"><span>NEXT</span></button>
+			</div>
+			
+			<div class="question5" id="question5">
+
+				<div class="en_tete">
+					<h1 class="nb_question">QUESTION 5</h1>
+				</div>
+				
+				<div><img src="image/anime_symbole/sao.png" class="img5"></div>
+
+				<div class="answers5">
+					<input type="radio" class="radio" name="radio5" id="quest5_1">
+					<label for="quest5_1">1. Berserk</label>
+					
+					<input type="radio" class="radio" name="radio5" id="quest5_2">
+					<label for="quest5_2">2. Demon Slayer</label>
+					
+					<input type="radio" class="radio" name="radio5" id="quest5_3">
+					<label for="quest5_3">3. Sword Art Online</label>
+					
+					<input type="radio" class="radio" name="radio5" id="quest5_4">
+					<label for="quest5_4">4. Tokyo Goul</label>
+				</div>
+
+				<button class="bouton_after" onclick="apperre_after_answer4()">AFTER</button>
+				<button class="bouton_next" onclick="apperre_next_answer5()"><span>NEXT</span></button>
+			</div>
+
+			<div class="question6" id="question6">
+
+				<div class="en_tete">
+					<h1 class="nb_question">QUESTION 6</h1>
+				</div>
+				
+				<div class="img_div"><img src="image/anime_symbole/demon_slayer.png" class="img6"></div>
+
+				<div class="answers6">
+					<input type="radio" class="radio" name="radio6" id="quest6_1">
+					<label for="quest6_1">1. Demon Slayer</label>
+					
+					<input type="radio" class="radio" name="radio6" id="quest6_2">
+					<label for="quest6_2">2. Bleach</label>
+					
+					<input type="radio" class="radio" name="radio6" id="quest6_3">
+					<label for="quest6_3">3. Hunter x Hunter</label>
+					
+					<input type="radio" class="radio" name="radio6" id="quest6_4">
+					<label for="quest6_4">4. Black Butler</label>
+				</div>
+
+				<button class="bouton_after" onclick="apperre_after_answer5()">AFTER</button>
+				<button class="bouton_next" onclick="apperre_next_answer6()"><span>NEXT</span></button>
+			</div>
+
+			<div class="question7" id="question7">
+
+				<div class="en_tete">
+					<h1 class="nb_question">QUESTION 7</h1>
+				</div>
+				
+				<div><img src="image/anime_symbole/jjk.png" class="img7"></div>
+
+				<div class="answers7">
+					<input type="radio" class="radio" name="radio7" id="quest7_1">
+					<label for="quest7_1">1. Berserk</label>
+					
+					<input type="radio" class="radio" name="radio7" id="quest7_2">
+					<label for="quest7_2">2. Jujustsu Kaisen</label>
+					
+					<input type="radio" class="radio" name="radio7" id="quest7_3">
+					<label for="quest7_3">3. Seven Deadly Sins</label>
+					
+					<input type="radio" class="radio" name="radio7" id="quest7_4">
+					<label for="quest7_4">4. Full Metal Alchimist</label>
+				</div>
+
+				<button class="bouton_after" onclick="apperre_after_answer6()">AFTER</button>
+				<button class="bouton_next" onclick="apperre_next_answer7()"><span>NEXT</span></button>
+			</div>
+
+			<div class="question8" id="question8">
+
+				<div class="en_tete">
+					<h1 class="nb_question">QUESTION 8</h1>
+				</div>
+				
+				<div><img src="image/anime_symbole/snk.png" class="img8"></div>
+
+				<div class="answers8">
+					<input type="radio" class="radio" name="radio8" id="quest8_1">
+					<label for="quest8_1">1. shingeki no kyojin</label>
+					
+					<input type="radio" class="radio" name="radio8" id="quest8_2">
+					<label for="quest8_2">2. Tokyo Revenger</label>
+					
+					<input type="radio" class="radio" name="radio8" id="quest8_3">
+					<label for="quest8_3">3. My Hero Academia</label>
+					
+					<input type="radio" class="radio" name="radio8" id="quest8_4">
+					<label for="quest8_4">4. Psycho Pass</label>
+				</div>
+
+				<button class="bouton_after" onclick="apperre_after_answer7()">AFTER</button>
+				<a href="7teste_blind.html" class="bouton_next" onclick="compatge()"><span>NEXT</span></a>
+			</div>
+
+</body>
+
+<script src="script/6script_anime.js"></script>
+
+</html>

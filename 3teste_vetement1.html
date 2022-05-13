@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style/3style_vetement.css">
+</head>
+
+<body>
+	<header>
+
+		<div class="nom_site">
+			<h1><a href="2fenetre_accueille.html" class="a_header">ACCED LIMITED</a></h1>
+		</div>
+
+		<div class="score">
+			<h2>Score = 0</h2>
+		</div>
+
+		<div class="menu">
+			<ul>
+				<li><a href="#" class="user" id="user_name">Nom User</a>
+					<ul class="diff_option">
+						<li><a href="1fenetre_login.html" class="deco"><span>Déconnexion</span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="div_principale">
+
+		<div class="centrale">
+			<div class="centrale2">
+
+				<div class="images_G">
+					<div ondrop="drop(event)" ondragover="allowDrop(event)" class="div_images"> <!--Permet le drag and drop-->
+						<img src="image/tenue q1/tenue1.png" class="image_centre" onclick="changer_image1()"
+							id="image1" draggable="true" ondragstart="drag(event)">
+					</div>
+
+					<div ondrop="drop(event)" ondragover="allowDrop(event)" class="div_images">
+						<img src="image/tenue q1/tenue2.png" class="image_centre" onclick="changer_image2()"
+							id="image2" draggable="true" ondragstart="drag(event)">
+					</div>
+
+					<div ondrop="drop(event)" ondragover="allowDrop(event)" class="div_images">
+						<img src="image/tenue q1/tenue3.png" class="image_centre" onclick="changer_image3()"
+							id="image3" draggable="true" ondragstart="drag(event)">
+					</div>
+
+					<div ondrop="drop(event)" ondragover="allowDrop(event)" class="div_images">
+						<img src="image/tenue q1/tenue4.png" class="image_centre" onclick="changer_image4()"
+							id="image4" draggable="true" ondragstart="drag(event)">
+					</div>
+
+					<div ondrop="drop(event)" ondragover="allowDrop(event)" class="div_images">
+						<img src="image/tenue q1/tenue5.png" class="image_centre" onclick="changer_image5()"
+							id="image5" draggable="true" ondragstart="drag(event)">
+					</div>
+
+					<div ondrop="drop(event)" ondragover="allowDrop(event)" class="div_images">
+						<img src="image/tenue q1/tenue6.png" class="image_centre" onclick="changer_image6()"
+							id="image6" draggable="true" ondragstart="drag(event)">
+					</div>
+
+					<div ondrop="drop(event)" ondragover="allowDrop(event)" class="div_images">
+						<img src="image/tenue q1/tenue7.png" class="image_centre" onclick="changer_image7()"
+							id="image7" draggable="true" ondragstart="drag(event)">
+					</div>
+				</div>
+
+				<div class="consigne_photo">
+					<img src="image/tenue q1/tenue1.png" class="image_centrale" id="IMG">
+				</div>
+
+				<div class="images_D">
+					<div ondrop="drop(event)" ondragover="allowDrop(event)" class="div_images">
+						<img src="image/tenue q1/tenue8.png" class="image_centre" onclick="changer_image8()"
+							id="image8" draggable="true" ondragstart="drag(event)">
+					</div>
+
+					<div ondrop="drop(event)" ondragover="allowDrop(event)" class="div_images">
+						<img src="image/tenue q1/tenue9.png" class="image_centre" onclick="changer_image9()"
+							id="image9" draggable="true" ondragstart="drag(event)">
+					</div>
+
+					<div ondrop="drop(event)" ondragover="allowDrop(event)" class="div_images">
+						<img src="image/tenue q1/tenue10.png" class="image_centre" onclick="changer_image10()"
+							id="image10" draggable="true" ondragstart="drag(event)">
+					</div>
+
+					<div ondrop="drop(event)" ondragover="allowDrop(event)" class="div_images">
+						<img src="image/tenue q1/tenue11.png" class="image_centre" onclick="changer_image11()"
+							id="image11" draggable="true" ondragstart="drag(event)">
+					</div>
+
+					<div ondrop="drop(event)" ondragover="allowDrop(event)" class="div_images">
+						<img src="image/tenue q1/tenue12.png" class="image_centre" onclick="changer_image12()"
+							id="image12" draggable="true" ondragstart="drag(event)">
+					</div>
+
+					<div ondrop="drop(event)" ondragover="allowDrop(event)" class="div_images">
+						<img src="image/tenue q1/tenue13.png" class="image_centre" onclick="changer_image13()"
+							id="image13" draggable="true" ondragstart="drag(event)">
+					</div>
+
+					<div ondrop="drop(event)" ondragover="allowDrop(event)" class="div_images">
+						<img src="image/tenue q1/tenue14.png" class="image_centre" onclick="changer_image14()"
+							id="image14" draggable="true" ondragstart="drag(event)">
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="images_gauche">
+			<div class="images_gauche2">
+
+				<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" class="div_drop"></div>
+
+				<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)" class="div_drop"></div>
+
+			</div>
+		</div>
+
+		<div class="image_droite">
+			<div class="images_droite2">
+
+				<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)" class="div_drop"></div>
+
+				<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)" class="div_drop"></div>
+
+				<a href="4teste_vetement2.html"><button onclick="get_answer()"
+						class="button_next_class"><span>NEXT</span></button></a>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+<script src="script/3script_vetement1.js"></script>
+
+</html>

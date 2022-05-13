@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style/1style_login.css">
+</head>
+
+<body>
+	<header>
+		<h1>ACCED LIMITED</h1>
+	</header>
+
+	<div class="content_login">
+		<h1>Login</h1>
+		<h2>Enter your name</h2>
+		<input type="text" placeholder="Entrez votre nom" maxlength="12"
+			onkeypress="verifierCaracteres(event); return false;" id="entry_user_name">
+		<!--onkeypress permet de limiter les caractère et lenght la nombre de ceux-ci-->
+		<a href="2fenetre_accueille.html"><button onclick="get_login()"
+				class="button_next_class"><span>NEXT</span></button></a>
+	</div>
+</body>
+
+<script src="script/1script_login.js"></script>
+
+</html>

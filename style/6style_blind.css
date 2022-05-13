@@ -1,0 +1,337 @@
+@font-face {
+    font-family: 'retro_gamingregular';
+    src: url('font/font_gaming/retro_gaming-webfont.woff2') format('woff2'),
+         url('font/font_gaming/retro_gaming-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dashearly';
+    src: url('font/user_name/dash-early-webfont.woff2') format('woff2'),
+         url('font/user_name/dash-early-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*************************************header****************************************/
+
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Background/background_header.png") center;
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	display: ruby;
+	text-align: center;
+    font-family: "retro_gamingregular";
+}
+
+.nom_site {
+	float: left;
+	text-align: justify;
+	color: rgb(255, 255, 255);
+	margin-left: 40px;
+	padding-top: 5px;
+	font-size: 1.5rem;
+}
+
+.a_header {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
+.score {
+	text-align: justify;
+	color: rgb(255, 255, 255);
+	padding-top: 15px;
+	font-size: 1.2rem;
+}
+
+.menu {
+	float: right;
+	margin-right: 40px;
+	background-color: transparent;
+	position: sticky;
+	top: 0px;
+	text-align: justify;
+	min-width: 225px;
+    font-family: "dashearly";
+}
+
+.menu ul {
+	list-style-type: none;
+}
+
+.menu ul li {
+	position: relative;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.deco {
+	display: block;
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+	font-size: 1.5rem;
+}
+
+.user {
+	display: block;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	border-bottom: 2px solid transparent;
+	padding: 10px 0px;
+}
+
+.diff_option {
+	display: none;
+	box-shadow: 0px 1px 2px #CCC;
+	background-color: white;
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+	border: 2px;
+}
+
+.menu>ul li:hover .diff_option {
+	display: block;
+}
+
+.diff_option li {
+	float: none;
+	width: 100%;
+	text-align: left;
+}
+
+.diff_option a {
+	padding: 10px;
+	border-bottom: none;
+}
+
+.diff_option a:hover {
+	border-bottom: none;
+	background-color: rgb(200, 200, 200);
+}
+
+
+/*************************************content****************************************/
+
+.div_principal {
+	height: 100vh;
+	margin: 0 auto;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("Background/background_blind.jpg") center;
+    background-size: cover;
+	text-align: center;
+    overflow-y: hidden;
+    color: rgb(255, 255, 255);
+    font-family: "";
+}
+
+
+/******************En tête******************/
+
+.div_principal .en_tete {
+    margin-top: 50px;
+    font-family: "retro_gamingregular";
+}
+
+.en_tete .num_musique {
+    font-size:3.5rem;
+    text-decoration: underline;
+    color: rgba(186, 186, 186, 0.727);
+}
+
+
+/******************Balise br******************/
+
+br {
+    margin-bottom: 20px;
+}
+
+
+/******************appraitre disparaitre******************/
+
+.apperre_20 {
+    animation-name: disparaitre20;
+    animation-duration: 15s;
+    opacity:0;
+}
+
+@keyframes disparaitre20 {
+    from {
+      opacity:1;
+    }
+    to {
+      opacity:1;
+    }
+}
+
+.apperre_10 {
+    animation-name: disparaitre10;
+    animation-duration: 11s;
+    opacity:0;
+}
+
+@keyframes disparaitre10 {
+    from {
+      opacity:1;
+    }
+    to {
+      opacity:1;
+    }
+}
+
+
+/******************answers******************/
+
+.answers {
+    padding-left: 35%;
+    font-size: 2rem;
+    text-align: left;
+}
+
+
+/******************musique1******************/
+
+.div_principal .div_musique1 {
+	display: block;
+    padding-top: 50px;
+}
+  
+
+/******************musique2******************/
+
+.div_principal .div_musique2 {
+	display: none;
+    padding-top: 50px;
+}
+
+
+/******************musique3******************/
+
+.div_principal .div_musique3 {
+	display: none;
+    padding-top: 50px;
+}
+
+
+/******************musique4******************/
+
+.div_principal .div_musique4 {
+	display: none;
+    padding-top: 50px;
+}
+
+
+/******************musique5******************/
+
+.div_principal .div_musique5 {
+	display: none;
+    padding-top: 50px;
+}
+
+/******************RadioButtob******************/
+
+input[type="radio"].radio {
+    display: none;
+}
+
+input[type="radio"].radio + label {
+    position: relative;
+    padding-left: 2.3rem;
+}
+
+input[type="radio"].radio + label::before,
+input[type="radio"].radio + label::after {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    content:'';
+    border-radius: 2rem;
+}
+
+input[type="radio"].radio + label::before {
+    bottom: 0;
+    left: 0;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    width: 2rem;
+    height: 2rem; 
+}
+
+input[type="radio"].radio + label::after {
+    bottom: 3px;
+    left: 3px;
+    width: calc(2rem - 6px);
+    height: calc(2rem - 6px);
+}
+
+input[type="radio"].radio:checked + label::after {
+    background-color: #00B7E8;
+}
+
+
+/******button******/
+
+.bouton_next {
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-size: 30px;
+    padding: 8px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    position: absolute;
+    right: 70px;
+    bottom: 70px;
+    font-family: "retro_gamingregular"
+}
+
+.bouton_next {
+    background-color: rgba(0, 0, 0, 0.534);
+    border: 2px solid rgba(255, 255, 255, 0.797);
+    color: rgba(255, 255, 255, 0.797);
+}
+
+.bouton_next:hover {
+    background-color: rgba(255, 255, 255, 0.671);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+.bouton_next span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.bouton_next span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.bouton_next:hover span {
+    padding-right: 25px;
+}
+
+.bouton_next:hover span:after {
+    opacity: 1;
+    right: 0;
+}
